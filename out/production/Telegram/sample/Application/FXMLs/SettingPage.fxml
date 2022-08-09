@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="700.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseExited="#ClosePane" prefHeight="500.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Application.Controllers.SettingPageController">
+   <children>
+      <VBox maxHeight="500.0" prefHeight="500.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: Darken;">
+               <image>
+                  <Image url="@../Resources/Images/default-user.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="110.0" />
+               </VBox.margin>
+            </ImageView>
+            <HBox maxHeight="100.0" onMouseClicked="#editProfilePic" prefHeight="50.0" prefWidth="319.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: Darken;">
+                     <image>
+                        <Image url="@../Resources/Images/EditUserPic.png" />
+                     </image></ImageView>
+                  <Label text="Edit Profile Picture" textAlignment="CENTER" textFill="#0e1840">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="KacstOne Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="25.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox maxHeight="100.0" onMouseClicked="#editUsername" prefHeight="50.0" prefWidth="319.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: Darken;">
+                     <image>
+                        <Image url="@../Resources/Images/EditUserName.png" />
+                     </image></ImageView>
+                  <Label text="Edit Username" textAlignment="CENTER" textFill="#0e1840">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="25.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox maxHeight="100.0" onMouseClicked="#editPassword" prefHeight="50.0" prefWidth="320.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: Darken;">
+                     <image>
+                        <Image url="@../Resources/Images/EditPass.png" />
+                     </image></ImageView>
+                  <Label text="Edit Password" textAlignment="CENTER" textFill="#0e1840">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="KacstOne Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="25.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox maxHeight="100.0" onMouseClicked="#CreateGroup" prefHeight="50.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: Darken;">
+                     <image>
+                        <Image url="@../Resources/Images/CreateGroup.png" />
+                     </image></ImageView>
+                  <Label text="Create Group" textAlignment="CENTER" textFill="#0e1840">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="KacstOne Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="25.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox onMouseClicked="#deleteProfilePic" prefHeight="50.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: Darken;">
+                     <image>
+                        <Image url="@../Resources/Images/DeleteUserPic.png" />
+                     </image></ImageView>
+                  <Label onMouseClicked="#deleteProfilePic" text="Delete Profile Pic" textAlignment="CENTER" textFill="#0e1840">
+                     <font>
+                        <Font name="KacstOne Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="25.0" top="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="210.0" maxHeight="100.0" onMouseClicked="#logOut" prefHeight="50.0" prefWidth="319.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: Darken;">
+                     <image>
+                        <Image url="@../Resources/Images/Logout.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="LogOut" textAlignment="CENTER" textFill="#0e1840">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="KacstOne Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children></VBox>
+   </children>
+</Pane>
