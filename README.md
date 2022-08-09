@@ -1,2 +1,4 @@
 # deadgram
-a deadly potion, and A Cardinal Sin, a noob programmer Trying  two write a messenger
+a deadly potion, A Cardinal Sin
+<br>
+a noob programmer Trying to write a messenger
