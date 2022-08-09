@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane onMouseExited="#ClosePane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Application.Controllers.UserListPageController">
+   <children>
+      <ListView fx:id="usersListView" layoutX="96.0" layoutY="10.0" onMouseClicked="#memberSelected" prefHeight="295.0" prefWidth="390.0" />
+      <Button layoutX="261.0" layoutY="308.0" mnemonicParsing="false" onAction="#addMember" stylesheets="@../Css/ButtonStyle.css" text="Join" />
+      <Button layoutX="262.0" layoutY="360.0" mnemonicParsing="false" onAction="#createGroup" text="Finish">
+         <stylesheets>
+            <URL value="@../Css/buttonCss.css" />
+            <URL value="@../Css/ButtonStyle.css" />
+         </stylesheets>
+      </Button>
+   </children>
+</Pane>
